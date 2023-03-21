@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .list {
@@ -28,7 +28,7 @@ body {
 }
 
 .title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
@@ -105,7 +105,7 @@ body {
   color: rgba(157, 164, 189, 0.6);
 }
 .hero-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
@@ -250,5 +250,116 @@ body {
   line-height: calc(19 / 14);
   text-align: center;
   letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+/** ---------------------out works-------------------- */
+.subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+}
+.beard-item {
+}
+
+.beards-items {
+}
+
+/** ---------------------info-------------------- */
+
+/*----------------Online-booking----------------*/
+.booking {
+}
+.head-booking,
+.head-contact {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+
+  /**color: var(--main-title-color);**/
+}
+
+/*---------------------Contacts---------------------*/
+.contact-info {
+}
+.head-contact {
+}
+.adress-info {
+}
+.contact-item {
+}
+
+.contact-items {
+}
+
+.contact-adress {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1, 6;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.contact-phone {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contact-email {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #9da4bd;
+}
+
+.time-work {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3;
+
+  text-transform: uppercase;
+
+  /* color: #ffffff;*/
+}
+.time-work-info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.footer-section {
+}
+.head-footer {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+.footer-item {
+}
+
+.footer-items {
+}
+.footer-list {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  color: var(--second-btn-color);
+}
+
+.footer-list:is(:hover, :focus) {
   color: #ff6c00;
 }

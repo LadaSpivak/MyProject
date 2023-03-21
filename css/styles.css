@@ -5,6 +5,33 @@
   --second-btn-color: #303030;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -15,6 +42,18 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .btn {
@@ -45,6 +84,7 @@ body {
 
 .header {
   background-color: gray;
+  padding-top: 32px;
 }
 
 .header-navigation {
@@ -103,8 +143,11 @@ body {
 
 .hero-top-text {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 .hero-title {
+  margin-bottom: 20px;
+
   font-family: "Raleway", sans-serif;
   font-size: 72px;
   line-height: 1.18;

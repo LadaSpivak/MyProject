@@ -96,6 +96,17 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-text::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  display: block;
+  background: currentColor;
 }
 
 /** -----------------------HEADER---------------------- */
@@ -260,7 +271,13 @@ body {
 /** -----------------------PRICES---------------------- */
 
 .prices {
-  background-color: #303030;
+  background-color: #111319;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: url(../images/img.png), linear-gradient(#111319, #111319);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
 }
 .prices-top-text {
   color: rgba(157, 164, 189, 0.6);
@@ -283,10 +300,36 @@ body {
   padding: 30px 20px;
 }
 
+.prices-list:first-child {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+.prices-list:last-child {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
+}
+
 .prices-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.prices-item::before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
 }
 
 .prices-item:last-child {
@@ -298,6 +341,11 @@ body {
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
+
+.prices-item-text:first-child {
+  order: -1;
+}
+
 .prices-btn {
   color: #ffffff;
   display: block;
@@ -308,11 +356,37 @@ body {
 
 .benefits {
 }
-.benefits-list {
+
+.benefits-container {
+  display: flex;
+  gap: 130px;
+  padding-left: 85px;
+  padding-right: 115px;
 }
 
 .benefits-wrap {
+  padding-top: 9px;
+}
+.benefits-list {
   display: flex;
+  width: 370px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  background-color: #f7f7f7;
 }
 
 .benefits-item .count {
@@ -322,6 +396,21 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.benefits-item .count::after {
+  content: "+";
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+
+  color: transparent;
+  vertical-align: top;
+  text-shadow: 1px 9px 0 #ff6c00;
 }
 
 .benefits-item .count + p {
@@ -346,6 +435,7 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  color: #555555;
 }
 
 /** -----------------------BARBERS---------------------- */

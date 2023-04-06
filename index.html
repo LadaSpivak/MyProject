@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -52,6 +53,7 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
+          <div class="hero-soc"> 
           <ul class="hero-list list">
             <li class="hero-item">
               <a
@@ -72,9 +74,11 @@
               >
             </li>
           </ul>
+          </div>
+
           <div class="hero-wrap">
           <p class="hero-top-text top-text">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title">BarberShop</h1>
+          <h1 class="hero-title"  data-aos="fade-right">BarberShop</h1>
           <p class="hero-bottom-text">
             We are experts in trendy men’s haircuts. We work quickly, carefully
             and with style.
@@ -105,7 +109,7 @@
           </ul>
           <div class="about-wrap"> 
           <p class="about-top-text top-text">About</p>
-          <h2 class="about-title title">Best Barbershop in your city</h2>
+          <h2 class="about-title title" data-aos="fade-up">Best Barbershop in your city</h2>
           <p class="about-bottom-text">
             If you want to add more confidence to your image, you should
             definitely visit us.
@@ -128,7 +132,7 @@
           <p class="prices-top-text top-text">
             Spend your time with the best masters
           </p>
-          <h2 class="prices-title title">Services and prices</h2>
+          <h2 class="prices-title title" data-aos="zoom-out-up">Services and prices</h2>
           <div class="prices-wrap">
           <ul class="prices-list list">
             <li class="prices-item">
@@ -432,5 +436,9 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>

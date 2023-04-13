@@ -555,34 +555,102 @@ body {
   width: calc((100% - 90) / 4);
 }
 
-/** ---------------------info-------------------- */
+/** ---------------------info-------------------- **/
 
-/*----------------Online-booking----------------*/
-.booking {
+.contact-wrap {
+  background-color: #191c26;
 }
-.head-booking,
-.head-contact {
+
+.contact-wrap > .container {
+  display: flex;
+}
+
+/** ---------------------ONLINE-------------------- **/
+.online {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  width: calc(50% + 15px);
+}
+
+.online-title,
+.contact-title {
+  margin-bottom: 44px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: 0.05em;
 
-  /**color: var(--main-title-color);**/
+  color: #ffffff;
 }
 
-/*---------------------Contacts---------------------*/
-.contact-info {
+.online-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.head-contact {
-}
-.adress-info {
-}
-.contact-item {
+.online-field {
+  position: relative;
+  margin-bottom: 44px;
 }
 
-.contact-items {
+.online-item {
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  color: #f7f7f7;
+  outline: transparent;
+  transition: border-color 300ms linear;
+}
+
+.online-item:focus,
+.online-item:not(:placeholder-shown) {
+  border-color: #ffffff;
+}
+
+.online-item:focus + .online-label,
+.online-item:not(:placeholder-shown) + .online-label {
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+.online-input {
+  width: 270px;
+  height: 24px;
+}
+.online-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  transition: color 300ms linear, transform 300ms linear;
+}
+
+.textarea-field {
+  width: 100%;
+}
+.online-text {
+  width: 100%;
+  height: 76px;
+  resize: none;
+}
+.btn {
+}
+.online-btn {
+  color: var(--main-btn-color);
+}
+
+/** ---------------------CONTACTS-------------------- **/
+.contacts {
+  padding-left: 105px;
+}
+
+.contact-title {
 }
 
 .contact-adress {
@@ -616,7 +684,7 @@ body {
 
   text-transform: uppercase;
 
-  /* color: #ffffff;*/
+  color: #ffffff;
 }
 .time-work-info {
   font-weight: 400;
@@ -625,6 +693,8 @@ body {
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
+
+/************************Footer*********************/
 .footer-section {
 }
 .head-footer {

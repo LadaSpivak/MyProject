@@ -82,7 +82,9 @@ body {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   background-color: transparent;
-  transition: background-color 300ms leaner, color 300ms linear;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
 }
 
 .btn:is(:hover, :focus) {
@@ -164,9 +166,16 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-right: 43px;
+  transition: color 300ms linear;
 }
+
+.header-phone:is(:hover, :focus) {
+  color: #ff6c00;
+}
+
 .header-btn {
   color: #ffffff;
+  margin-right: 17px;
 }
 
 /** -----------------------HERO---------------------- */
@@ -225,6 +234,9 @@ body {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
 }
 
 .hero-link:is(:hover, :focus) {
@@ -251,6 +263,30 @@ body {
   letter-spacing: 0.02em;
   color: #9da4bd;
   max-width: 360px;
+}
+
+.slider__pagination {
+  position: absolute;
+  top: 26%;
+  right: 750px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.slider__pagination-item {
+  width: 8px;
+  height: 2px;
+  margin-left: auto;
+  background-color: #9da4bd;
+}
+
+.slider__pagination-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.slider-pagination__item-active {
+  width: 18px;
+  background-color: #fff;
 }
 
 /** -----------------------ABOUT---------------------- */

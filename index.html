@@ -22,7 +22,7 @@
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header header-trancperent">
+    <header class="header header--no-transparency" data-header>
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo" href>
@@ -82,7 +82,6 @@
           <p class="hero-bottom-text">
             We are experts in trendy men’s haircuts. We work quickly, carefully
             and with style.
-            </div>
           </p>
         </div>
           <div class="slider">
@@ -102,7 +101,7 @@
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
-              <img
+              <img class="about-img"
                 src="./images/img2.1.jpg"
                 alt="haircut"
                 width="270"
@@ -481,6 +480,7 @@
         </ul>
       </div>
     </footer>
+    <script src="./header.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
   AOS.init();

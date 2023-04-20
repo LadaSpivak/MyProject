@@ -267,7 +267,7 @@ body {
 
 .slider__pagination {
   position: absolute;
-  top: 26%;
+  top: 325px;
   right: 750px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);

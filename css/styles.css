@@ -358,8 +358,6 @@ body {
 
 .about-item {
   overflow: hidden;
-
-  a
 }
 
 .about-wrap {
@@ -834,9 +832,18 @@ body {
 }
 
 /************************Footer*********************/
-.footer-section {
+.footer {
 }
+
+.footer-container {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  display: flex;
+  align-items: center;
+}
+
 .head-footer {
+  margin-right: auto;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
@@ -844,6 +851,13 @@ body {
   color: #9da4bd;
 }
 .footer-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.top-text {
+  gap: 40px;
 }
 
 .footer-items {
@@ -854,6 +868,7 @@ body {
   line-height: 1.4;
   letter-spacing: 0.2em;
   color: var(--second-btn-color);
+  transition: color 300ms linear;
 }
 
 .footer-list:is(:hover, :focus) {

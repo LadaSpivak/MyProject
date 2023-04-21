@@ -46,7 +46,7 @@
         <a class="header-phone link" href="tel:+380441111111"
           >+38 044 111 11 11</a
         >
-        <button class="header-btn btn" type="submit">Online-booking</button>
+        <button class="header-btn btn" data-modal-open type="submit">Online-booking</button>
       </div>
     </header>
 
@@ -131,7 +131,7 @@
             the same wave" with clients. Therefore, we are always ready to
             improve everyone who comes to us!
           </p>
-          <button class="about-btn btn" type="button">Online-booking</button>
+          <button class="about-btn btn" type="button" data-modal-open >Online-booking</button>
         </div>
         </div>
       </section>
@@ -181,26 +181,26 @@
             </li>
           </ul>
           </div>
-          <button class="prices-btn btn" type="button">Online-booking</button>
+          <button class="prices-btn btn" type="button" data-modal-open>Online-booking</button>
         </div>
       </section>
 
        <section class="benefits section">
         <div class="container benefits-container">
           <ul class="benefits-list list">
-            <li class="benefits-item">
+            <li class="benefits-item first">
               <span class="count">600</span>
               <p class="benefits-item-text">Satisfied customers per day</p>
             </li>
-            <li class="benefits-item">
+            <li class="benefits-item second">
               <span class="count">50</span>
               <p class="benefits-item-text">Awards for excellent service</p>
             </li>
-            <li class="benefits-item">
+            <li class="benefits-item third">
               <span class="count">20</span>
               <p class="benefits-item-text">Kyiv’s best barbers</p>
             </li>
-            <li class="benefits-item">
+            <li class="benefits-item fourth">
               <span class="count">100</span>
               <p class="benefits-item-text">Gifts for regular customers</p>
             </li>
@@ -224,7 +224,7 @@
           <h2 class="barbers-title title" data-aos="zoom-out-up" >Our barbers</h2>
           <ul class="barbers-list list">
             <li class="barbers-item">
-              <img
+              <img class="barbers-image"
                 src="./images/img1o.jpg"
                 alt="barbers photo"
                 width="370"
@@ -262,7 +262,7 @@
               </div>
             </li>
             <li class="barbers-item">
-              <img
+              <img class="barbers-image"
                 src="./images/img2o.jpg"
                 alt="barbers photo"
                 width="370"
@@ -300,7 +300,7 @@
               </div>
             </li>
             <li class="barbers-item">
-              <img
+              <img class="barbers-image"
                 src="./images/img3o.jpg"
                 alt="barbers photo"
                 width="370"
@@ -497,8 +497,26 @@
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+     <div class="modal">
+      <button type="button" class="modal-close-btn" data-modal-close>  
+        <svg class="icon-btn" width="15" height="15" >
+      <use href="./images/icons.svg#icon-close"></use> </svg>
+    </button>
+    <strong class="modal-title">Leave your details, we will call you back</strong>
+    <form class="modal-form">
+      <input type="text" class="modal-input"/>
+       <input type="tel" class="modal-input" />
+        <input type="email" class="modal-input"/>
+    </form>
+     </div>
+
+    </div>
+ 
+    <script src="./modal.js"></script>
     <script src="./header.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>rm
     <script>
   AOS.init();
 </script>

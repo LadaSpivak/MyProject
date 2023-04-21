@@ -39,7 +39,7 @@
               <a class="header-link link" href="#barbers">Barbers</a>
             </li>
             <li class="header-item">
-              <a class="header-link link" href="#contacts">Contacts</a>
+              <a class="header-link link" href="#contact">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -393,8 +393,8 @@
         </div>
       </section>
 
-    <div id="contacts" class="contact-wrap">
-       <div class="container">
+    <div id="contact" class="contact-wrap">
+       <div class="container contacts-container">
          <section class="online">
              <h2 class="online-title title" data-aos="fade-up" >Online-booking</h2>
               <form class="online-form">
@@ -433,35 +433,41 @@
             </form>
          </section>
         
-         <section class="contacts">
+         <section class="contacts contact-group">
              <h2 class="contact-title title" data-aos="fade-up" >Contacts</h2>
-             <address class="contact-adress">
-               <ul>
-                 <li>
-                   <a
+             <address class="contact-adress list">
+               <ul class="contact-list list">
+                 <li class="contacts-link">
+                   <a class="adress "
                      href="https://goo.gl/maps/488Sy1855LLvMbea7"
                      target="_blank"
-                     rel="noopener noreferrer nofollow"
-                     >st. Vasilkivska, 7A<br />
+                     rel="noopener noreferrer nofollow">
+                     <svg class="contact-icon wrap-link" width="24" height="24" >
+                      <use href="./images/icons.svg#map-pin" ></use>
+                     </svg>st. Vasilkivska, 7A <br />
                      Kyiv, 08132</a
                    >
                  </li>
-                 <li>
-                   <a class="contact-phone" href="tel:+380441111111"
-                     >+38 044 111 11 11</a
+                 <li class="contacts-link">
+                   <a class="contact-phone " href="tel:+380441111111"
+                     ><svg class="contact-icon wrap-link" width="24" height="24" >
+                      <use href="./images/icons.svg#phone" ></use>
+                     </svg>+38 044 111 11 11</a
                    >
                  </li>
                  <li >
                    <a class="contact-email" href="mailto:barbershop@email.com"
-                     >barbershop@email.com</a
+                     ><svg class="contact-icon wrap-link" width="24" height="24" >
+                      <use href="./images/icons.svg#mail" ></use>
+                     </svg> barbershop@email.com</a
                    >
                  </li>
                </ul>
              </address>
-             <h3 class="time-work">Working hours</h3>
+             <h3 class="time-work top-text-time">Working hours</h3>
              <p class="time-work-info ">Every day from 9:00 to 22:00</p>
            </div>
-         </section>
+         </section> 
        </div>
       </div>
     </main>

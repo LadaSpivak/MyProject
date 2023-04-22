@@ -1200,7 +1200,7 @@ body {
 
 .check-text::before {
   content: "";
-  width: 16px;
+  width: 17px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;

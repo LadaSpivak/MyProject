@@ -993,7 +993,7 @@ body {
 
 .modal {
   width: 528px;
-  min-height: 650px;
+  min-height: 750px;
   background-color: #fff;
   border-radius: 10px;
   position: absolute;
@@ -1200,7 +1200,7 @@ body {
 
 .check-text::before {
   content: "";
-  width: 17px;
+  width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;

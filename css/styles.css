@@ -993,7 +993,7 @@ body {
 
 .modal {
   width: 528px;
-  min-height: 750px;
+  min-height: 700px;
   background-color: #fff;
   border-radius: 10px;
   position: absolute;

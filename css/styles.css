@@ -605,7 +605,7 @@ body {
 
 .barbers-image:hover {
   transform: rotate(360deg);
-  transition: transform 750ms linear;
+  transition: transform 300ms linear;
 }
 
 .barbers-item {
@@ -993,7 +993,7 @@ body {
 
 .modal {
   width: 528px;
-  min-height: 580px;
+  min-height: 650px;
   background-color: #fff;
   border-radius: 10px;
   position: absolute;
@@ -1020,7 +1020,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: color, background-color;
+  transition-property: fill, background-color;
   transition-duration: 300ms;
   transition-timing-function: linear;
 }
@@ -1044,4 +1044,116 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-label:nth-child(5) {
+  margin-bottom: 15px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #9da4bd;
+
+  border-radius: 4px;
+  outline: transparent;
+  padding: 12px 42px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.modal-name {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #757575;
+}
+
+.modal-input:focus {
+  border: 1px solid #ff6c00;
+}
+
+.modal-input:focus + .modal-icon {
+  fill: #ff6c00;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #9da4bd;
+  padding: 10px;
+
+  border-radius: 4px;
+  outline: transparent;
+  resize: none;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.modal-textarea:focus {
+  border: 1px solid #ff6c00;
+}
+
+.modal-select {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #9da4bd;
+
+  border-radius: 4px;
+  outline: transparent;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.radio {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal-radio {
+  font-size: 16px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.check-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.title-master {
+  text-align: center;
+  font-size: 17px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #555555;
 }

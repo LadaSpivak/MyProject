@@ -474,7 +474,7 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <p class="head-footer">&copy;Copyright 2020</p>
+        <p class="head-footer">&copy;Copyright 2023</p>
         <ul class="footer-item list top-text">
           <li class="footer-items">
             <a
@@ -506,12 +506,82 @@
     </button>
     <strong class="modal-title">Leave your details, we will call you back</strong>
     <form class="modal-form">
-      <input type="text" class="modal-input"/>
-       <input type="tel" class="modal-input" />
-        <input type="email" class="modal-input"/>
+     
+      <label class="modal-label">
+        <span class="modal-name"> Name</span>
+        <span class="input-wrap">
+      <input type="text" name="user-name" class="modal-input" placeholder="Vladislava Spivak" required title="Enter name" />
+      <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons.svg#profile"></use>
+          </svg>
+          </span>
+    </label>
+      
+    <label class="modal-label">
+        <span class="modal-name"> Phone</span>
+         <span class="input-wrap"> 
+      <input type="tel" name="user-phone" class="modal-input" placeholder="+380 662 773 840" required  title="Enter tel"/>
+       <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons.svg#mobile"></use>
+          </svg>
+         </span>
+    </label>
+      
+        <label class="modal-label">
+        <span class="modal-name">Email</span>
+        <span class="input-wrap">
+      <input type="email" name="user-mail" class="modal-input"placeholder="heshtegvlada@gmail.com" />
+        <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons.svg#envelope"></use>
+          </svg>
+         </span>
+    </label>
+
+    <label class="modal-label" for="user-text"><span class="modal-name">Message</span>
+      <textarea name="user-text" id="user-text" class="modal-textarea" placeholder="Leave your message..."></textarea>
+    </label>
+
+    <label class="modal-label" for="user-city"><span class="modal-name">Your city</span>
+      <select name="user-city" id="user-city" class="modal-select">
+        <option value="Kharkiv">Kharkiv</option>
+        <option value="Kyiv">Kyiv</option>
+        <option value="Lviv">Lviv</option>
+      </select>
+    </label>
+
+    <div class="check">
+        <p class="title-master">Master category</p>
+    <div class="radio">
+    <span><label class="modal-radio " for="top-barber">Top barber</label>
+      <input class="" type="radio" name="barber" id="top-barber" value="top-barber" /></span>
+    <span><label class="modal-radio " for="barber">Barber</label>
+      <input class="" type="radio" name="barber" id="barber" value="barber"/></span>
+    <span><label class="modal-radio " for="barber-trainee">Barber trainee</label>
+      <input class="" type="radio" name="barber" id="barber-trainee" value="barber-trainee" /></span>
+      </div>
+    </div>
+        
+      <div class="check">
+        <p class="title-master">Services</p>
+      <div class="check-box">
+       <span>
+    <label class="modal-radio" for="hair">Haircut</label>
+      <input class="" type="checkbox" name="type" id="hair" value="hair" />
+    </span>
+   <span> <label class="modal-radio" for="beard">Beardcut</label>
+      <input class="" type="checkbox" name="type" id="beard" value="beard"/></span>
+      <span>
+    <label class="modal-radio" for="shaving">Shaving</label>
+      <input class="" type="checkbox" name="type" id="shaving" value="shaving" /></span>
+      </div>
+      </div>
+    
+    <button type="submit" class="send-btn">
+          SEND <svg  width="24" height="24">
+            <use href="./images/icons.svg#send"></use>
+          </svg> </button> 
     </form>
      </div>
-
     </div>
  
     <script src="./modal.js"></script>
